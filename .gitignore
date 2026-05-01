@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.DS_Store
+
+# data / outputs
+data/
+outputs/
+checkpoints/
+wandb/
+*.log
+
+# secrets
+.env
+*.key
+*.pem
+config.local.*
