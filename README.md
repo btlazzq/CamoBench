@@ -18,7 +18,7 @@ By downloading or using this repository, you acknowledge and agree to these term
 
 ## Repository Structure
 - `canonical_builder/`: Canonical corpus construction (category-wise raw and normalized text generation).
-- `camo_generator/`: Multi-strategy camouflaged text generation (abbreviation, emoji, phonetic, shape-based, semantic, etc.).
+- `camo_generator/`: Multi-strategy camouflaged text generation (abbreviation, emoji, phonetic, orthographic, semantic, etc.).
 - `camo_evaluator/`: Model and moderation-system evaluation (sampling, inference, result splitting, and analysis).
 - `robustness_trainer/`: Classification-model fine-tuning and robustness training (LoRA/DDP).
 - `anchor_replace/`: Anchor-word replacement and coverage-balanced data augmentation scripts.
@@ -114,11 +114,11 @@ python camo_generator/phonetic_camo/batch_phonetic_camo.py \
   --out_dir camo_generator/phonetic_camo/output_phonetic_gambling
 ```
 
-4) **Shape-based camo**
+4) **Orthographic-based camo**
 ```bash
-python camo_generator/shape_camo/batch_shape_camo.py \
+python camo_generator/orthographic_camo/batch_orthographic_camo.py \
   --terms_file camo_generator/term_black.txt \
-  --out_dir camo_generator/shape_camo/output_shape_black
+  --out_dir camo_generator/orthographic_camo/output_orthographic_black
 ```
 
 5) **Semantic camo (retrieval + generation)**
