@@ -114,7 +114,7 @@ python camo_generator/phonetic_camo/batch_phonetic_camo.py \
   --out_dir camo_generator/phonetic_camo/output_phonetic_gambling
 ```
 
-4) **Orthographic-based camo**
+4) **Orthographic camo**
 ```bash
 python camo_generator/orthographic_camo/batch_orthographic_camo.py \
   --terms_file camo_generator/term_black.txt \
